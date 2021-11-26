@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;600&display=swap');
+
+:root {
+    --blue: rgb(58, 58, 73);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.3rem;
+    font-family: outfit;
+}
+
+.project-tile img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#navbar-sticky {
+    background-color: rgb(76, 114, 110);
+    position: sticky;
+    top: 0;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    gap: 20px;
+}
+
+li {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(49, 73, 71);
+    border-radius: 10px;
+    border: 2px solid wheat;
+}
+
+li a {
+    text-decoration: none;
+    width: 100%;
+    font-weight: 900;
+    color: wheat;
+}
+
+.container {
+    width: min(90%, 900px);
+    margin: 0 auto;
+}
+
+.project-tile {
+    width: min(60%, 250px);
+    border: 2px solid var(--blue);
+    margin: 2em 0;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px var(--blue);
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 750px) {
+    .row {
+        flex-direction: row;
+        gap: 50px;
+        justify-content: center;
+    }
+}
+
+#welcome-section {
+    height: 100vh;
+    background-color: rgb(76, 114, 110);
+    display: flex;
+    flex-direction: column;
+    font-size: 5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#projects {
+    padding: 5em 0;
+}
+
+#contact {
+    background-color: rgb(76, 114, 110);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#contact p {
+    color: wheat;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+#gh {
+    margin-top: 2em;
+}
+
+footer {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(49, 73, 71);
+    color: wheat;
+}
